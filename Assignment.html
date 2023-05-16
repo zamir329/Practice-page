@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <title>Practice Page</title>
+
+    <style>
+        .zamir {
+            padding-top: 20px
+        }
+
+        .zamir1 {
+            padding-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> Form filling</h2>
+    <div>
+        <div>
+            <Label>First Name</Label>
+            <input type="First Name" id="Firstname">
+            <div>
+                <div class="zamir">
+                    <Label>Last Name</Label>
+                    <input type="Last Name" id="Lastname">
+                </div>
+                <div class="zamir">
+                    <Label>Email</Label>
+                    <input type="email" class="Email">
+                </div>
+                <div class="zamir">
+                    <Label>Mobile No.</Label>
+                    <input type="Mobile No." id="Mobile">
+                </div>
+            </div>
+
+
+            <div class="zamir1"></div>
+            <h2>Clickable Dropdown</h2>
+            <div>
+                <label for="language">Select a Programming Language:</label>
+                <select name="language" id="language">
+                    <option value="javascript">JavaScript </option>
+                    <option value="python">Python</option>
+                    <option value="c++">C++</option>
+                    <option value="java">Java</option>
+                    <option value="selenium">selenium</option>
+                    <option value="Cypress">Cypress</option>
+                    <option value="Cucumber">Cucumber</option>
+                    <option value="API">API</option>
+                    <option value="Rest Assured">Rest Assured</option>
+                </select>
+            </div>
+
+            <div class="zamir1"></div>
+            <h2>Alert Popup Button</h2>
+            <button onclick="myFunction()">Try it out</button>
+            <p id="demo"></p>
+        </div>
+
+
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+
+        <script>
+            function myFunction() {
+                var txt;
+                if (confirm("Press a button!")) {
+                    txt = "You pressed OK!";
+                } else {
+                    txt = "You pressed Cancel!";
+                }
+                document.getElementById("demo").innerHTML = txt;
+            }
+        </script>
+
+        <script>
+            function myFunction() {
+                var txt;
+                if (confirm("Press a button!")) {
+                    txt = "You pressed OK!";
+                } else {
+                    txt = "You pressed Cancel!";
+                }
+                document.getElementById("demo").innerHTML = txt;
+            }
+        </script>
+
+
+        </head>
+        <html>
